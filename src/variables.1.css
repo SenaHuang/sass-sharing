@@ -1,0 +1,8 @@
+
+:root {
+	--primary: #00afb8; /* 產品主色 */
+}
+
+.color-primary {
+	color: var(--primary);
+}

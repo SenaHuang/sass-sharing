@@ -1,0 +1,301 @@
+import { Image, Notes, Head } from "mdx-deck";
+import { CodeSurferColumns, Step } from "code-surfer";
+import {
+  vsDark as classTheme,
+  nightOwl as hooksTheme,
+} from "@code-surfer/themes";
+
+export const theme = classTheme;
+
+<Head>
+  <title>Sass/SCSS 初探</title>
+</Head>
+
+# Sass/SCSS 初探
+
+> Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+
+---
+
+- Ruby Sass 在 2019/3/26 已停止支援
+- Dart Sass 成為官方停止更新 Ruby 轉而推薦的項目
+
+---
+
+# 導入的原因
+
+---
+
+### 從需求：大小版
+
+---
+
+### 當 hrm.css 越來越大
+
+---
+
+### Sass vs Scss
+
+---
+
+<CodeSurferColumns themes={[classTheme, hooksTheme]}>
+
+<Step >
+
+```sass title="sass" file=./src/sass.sass 
+```
+
+```scss title="scss" file=./src/scss.scss 
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+# SCSS 優勢
+
+``` markup
+- 支援所有原本 CSS 的規則
+- 開發檔案拆分
+- 快速、高效開發
+```
+
+---
+
+## 用法摘要
+
+---
+
+### @import
+
+---
+
+<CodeSurferColumns themes={[classTheme, hooksTheme]}>
+
+<Step subtitle="Nesting">
+
+```sass title="sass" file=./src/nesting.1.scss 
+```
+
+```scss title="scss" file=./src/nesting.1.scss 
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+
+---
+
+<CodeSurferColumns themes={[classTheme, hooksTheme]}>
+
+<Step subtitle="Nesting">
+
+```scss title="scss" file=./src/nesting.2.scss 
+```
+
+```css  title="css" file=./src/nesting.2.css 
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns themes={[classTheme, hooksTheme]}>
+
+<Step subtitle="variables">
+
+```scss  title="scss" file=./src/variables.1.scss 
+```
+
+```css title="css" file=./src/variables.1.css 
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns themes={[classTheme, hooksTheme]}>
+
+<Step subtitle="變數的區塊">
+
+```scss  title="scss" file=./src/variables.2.scss 
+```
+
+```css title="css" file=./src/variables.2.css
+```
+
+</Step>
+
+<Step subtitle="變數的區塊">
+
+```scss  title="scss" file=./src/variables.3.scss 
+```
+
+```css title="css" file=./src/variables.3.css 
+```
+
+</Step>
+
+<Step subtitle="變數的區塊">
+
+```scss  title="scss" file=./src/variables.4.scss
+```
+
+```css title="css" file=./src/variables.4.css
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+### Sass Map
+
+```scss
+$map: (
+  key1: value1, 
+  key2: value2, 
+  key3: value3
+);
+```
+---
+
+<CodeSurferColumns themes={[classTheme, hooksTheme]}>
+
+<Step subtitle="Sass Map">
+
+```scss  title="scss" file=./src/map.1.scss
+```
+
+```css title="css" file=./src/map.1.css
+```
+
+</Step>
+
+<Step subtitle="更加優雅的使用 Sass Maps">
+
+```scss  title="scss" file=./src/map.2.scss
+```
+
+```css title="css" file=./src/map.2.css
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns themes={[classTheme, hooksTheme]}>
+
+<Step subtitle="@mixin">
+
+```scss title="scss" file=./src/mixin.scss
+```
+
+```css  title="css" file=./src/mixin.css
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns themes={[classTheme, hooksTheme]}>
+
+<Step subtitle="@extend">
+
+```scss title="scss" file=./src/extend.scss
+```
+
+
+```css  title="css" file=./src/extend.css
+```
+
+</Step>
+
+<Step subtitle="@extend + placeholders selectors %">
+
+```scss title="scss" file=./src/extend.placeholders.scss
+```
+
+
+```css  title="css" file=./src/extend.placeholders.css
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+### @function
+
+---
+
+<CodeSurferColumns themes={[classTheme, hooksTheme]}>
+
+<Step subtitle="@if、@else、@else if">
+
+```scss title="scss" file=./src/if.scss
+```
+
+```css  title="css" file=./src/if.css
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns themes={[classTheme, hooksTheme]}>
+
+<Step subtitle="@each">
+
+```scss title="scss" file=./src/each.scss
+```
+
+```css  title="css" file=./src/each.css
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns themes={[classTheme, hooksTheme]}>
+
+<Step subtitle="@for">
+
+```scss title="scss" file=./src/for.scss
+```
+
+```css  title="css" file=./src/for.css
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+# thank you
+
+---
+
+###### reference
+
+- [Sass](https://sass-lang.com/)
+- [SCSS 15分鐘入門](https://eddychang.me/learn-scss-in-15-mins/)
+- [Code Surfer Docs](https://codesurfer.pomb.us/)

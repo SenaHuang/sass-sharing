@@ -1,0 +1,9 @@
+
+$width: 800px;
+
+.logo {
+  width: $width;
+  position: absolute;
+  left: calc(50% - #{$width / 2});
+  top: 0;
+}

@@ -1,0 +1,10 @@
+
+@mixin block {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.container {
+  @include block;
+}
